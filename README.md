@@ -1,3 +1,3 @@
-# NeelJVerma.github.io
-Personal website and portfolio for Neel Verma, a computer science student and
+# ShadmanAhsan.github.io
+Personal website and portfolio for Shadman Ahsan, a computer science graduate and
 software engineer.
