@@ -75,7 +75,7 @@ header nav {
 
 #pre-intro {
     min-height: 500px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../assets/cover1.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../assets/cover3.jpg") no-repeat;
     height: 500px;
     background-position: center center;
     background-size: cover;
