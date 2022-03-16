@@ -218,10 +218,16 @@ header nav {
 }
 
 #skills h1 {
+    display: block;
     margin-top: 50px;
     font-size: 50px;
     margin-bottom: 100px;
     text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: #777;
+    margin-bottom: 60px;
+    animation: moveInLeft 1s ease-out;
 }
 
 .cards-list {
