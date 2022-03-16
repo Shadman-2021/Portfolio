@@ -72,6 +72,20 @@ header nav {
 }
 
 
+/* gap */
+
+#gap {
+    min-height: 500px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("https://media4.giphy.com/media/9JrkkDoJuU0FbdbUZU/giphy.gif?cid=ecf05e47up6vnwkpxxsjfovi89gdx9k58ncfjihwds9x8i1z&rid=giphy.gif&ct=g") no-repeat;
+    height: 900px;
+    background-position: center center;
+    background-size: fit;
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+
 /* pre-intro */
 
 
@@ -609,4 +623,34 @@ header nav {
     #contact #contact-heading p {
         font-size: 18px;
     }
+}
+
+.copyright-area {
+    background: #202020;
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+
+.copyright-text p a {
+    color: #ff5e14;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 10px;
+    float: right;
+}
+
+.footer-menu li:hover a {
+    color: #ff5e14;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
 }
