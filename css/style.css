@@ -54,7 +54,8 @@ header a {
 header li {
     float: left;
     display: inline;
-    padding: 0 20px 0 5px;
+    padding: 0 30px 0 5px;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -75,7 +76,7 @@ header nav {
 
 #pre-intro {
     min-height: 500px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../assets/cover3.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("https://media3.giphy.com/media/OK5LK5zLFfdm/giphy.gif?cid=ecf05e477tskn1tq8btq95tnghirpyvbs8g02jamrzfpk4y4&rid=giphy.gif&ct=g") no-repeat;
     height: 500px;
     background-position: center center;
     background-size: cover;
@@ -113,16 +114,50 @@ header nav {
 }
 
 #introduction h1 {
+    display: block;
     margin-top: 50px;
     font-size: 50px;
-    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: #777;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: moveInLeft 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 #introduction p {
     color: #000;
     font-size: 20px;
     padding-bottom: 10px;
+    animation: moveInRight 2s ease-out;
 }
 
 #introduction #second {
@@ -199,7 +234,7 @@ header nav {
 
 .card {
     margin: 30px auto;
-    margin-right: 20px;
+    margin-bottom: 60px;
     width: 300px;
     height: 300px;
     border-radius: 40px;
