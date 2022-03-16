@@ -75,7 +75,7 @@ header nav {
 
 #pre-intro {
     min-height: 500px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../assets/cover.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../assets/cover3.jpg") no-repeat;
     height: 500px;
     background-position: center center;
     background-size: cover;
@@ -171,6 +171,84 @@ header nav {
 #introduction #resume:hover {
     background-color: #F33547;
     color: #fff;
+}
+
+
+/* Skills */
+
+#skills {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+#skills h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px auto;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: fit;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -370px;
+    height: 40px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+    color: rgb(248, 31, 31);
+}
+
+.title-black {
+    color: rgb(0, 0, 0);
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
 }
 
 
