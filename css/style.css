@@ -74,9 +74,12 @@ header nav {
 
 /* pre-intro */
 
+
+/* https://media3.giphy.com/media/OK5LK5zLFfdm/giphy.gif?cid=ecf05e477tskn1tq8btq95tnghirpyvbs8g02jamrzfpk4y4&rid=giphy.gif&ct=g */
+
 #pre-intro {
     min-height: 500px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("https://media3.giphy.com/media/OK5LK5zLFfdm/giphy.gif?cid=ecf05e477tskn1tq8btq95tnghirpyvbs8g02jamrzfpk4y4&rid=giphy.gif&ct=g") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif?cid=790b7611ffdf29f9550a601cc136f35c2a9e8fffdd37c463&rid=giphy.gif&ct=g") no-repeat;
     height: 500px;
     background-position: center center;
     background-size: cover;
@@ -212,7 +215,7 @@ header nav {
 /* Skills */
 
 #skills {
-    color: #000;
+    background-color: #B7CADB;
     font-family: "Roboto", sans-serif;
     text-align: center;
 }
@@ -277,8 +280,8 @@ header nav {
     box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
-.title-white {
-    color: rgb(248, 31, 31);
+.title-red {
+    color: #ffffff;
 }
 
 .title-black {
@@ -296,7 +299,6 @@ header nav {
 /* boxes */
 
 .boxes {
-    margin-top: 20px;
     text-align: center;
     font-family: "Roboto", sans-serif;
     color: #fff;
