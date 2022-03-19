@@ -108,3 +108,50 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
     social_panel_container.classList.remove('visible')
 });
+
+//tootips
+window.onload = function() {
+    const tooltips = document.querySelectorAll("[data-tooltip]");
+    tooltips.forEach((e) => {
+        e.addEventListener("mouseenter", showTooltip);
+        e.addEventListener("mouseleave", hideTooltip);
+    });
+
+    function showTooltip(e) {
+        const setTooltip = () => {
+            const element = e.target;
+            const { tooltip, position = "down" } = element.dataset;
+            const { top, left, height, width } = element.getBoundingClientRect();
+
+            tooltipContainer.innerHTML = `<p>${tooltip}</p`;
+
+            const {
+                width: w2,
+                height: h2
+            } = tooltipContainer.getBoundingClientRect();
+
+            if (position === "down") {
+                tooltipContainer.style.top = `${top + height + 5}px`;
+                tooltipContainer.style.left = `${left + width / 2 - w2 / 2}px`;
+            } else if (position === "top") {
+                tooltipContainer.style.top = `${top - height - 5}px`;
+                tooltipContainer.style.left = `${left + width / 2 - w2 / 2}px`;
+            } else if (position === "top-pad") {
+                tooltipContainer.style.top = `${top - height - 15}px`;
+                tooltipContainer.style.left = `${left + width / 2 - w2 / 2}px`;
+            } else {
+                tooltipContainer.style.top = `${top + height / 2 - h2 / 2}px`;
+                tooltipContainer.style.left = `${left - w2 - 5}px`;
+            }
+        };
+
+        // TODO: Add delay logic
+        setTooltip();
+    }
+
+    function hideTooltip() {
+        tooltipContainer.innerHTML = "";
+        tooltipContainer.style.top = "-9999px";
+        tooltipContainer.style.left = "-9999px";
+    }
+}
